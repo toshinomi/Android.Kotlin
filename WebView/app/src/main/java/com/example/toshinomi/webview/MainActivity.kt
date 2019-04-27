@@ -107,10 +107,10 @@ class MainActivity : AppCompatActivity() {
         return bRst
     }
 
-    fun HomeWebView()
+    fun HomeWebView(): Boolean
     {
         m_textUri?.setText(m_strUri)
-        ShowWebView(m_strUri)
+        return ShowWebView(m_strUri)
     }
 
     fun ShowWebView(_strUri: String?): Boolean
